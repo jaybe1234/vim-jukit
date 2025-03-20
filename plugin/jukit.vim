@@ -253,7 +253,7 @@ fun! s:set_mappings() abort
         vnoremap <buffer> <cr> <esc><cmd>call jukit#send#selection()<cr>
     endif
     if !hasmapto('jukit#send#section', 'n')
-        nnoremap <buffer> <leader><space> <cmd>call jukit#send#section(0)<cr>
+        nnoremap <buffer> <S-enter> <cmd>call jukit#send#section(0)<cr>
     endif
     if !hasmapto('jukit#send#until_current_section', 'n')
         nnoremap <buffer> <leader>cc <cmd>call jukit#send#until_current_section()<cr>
