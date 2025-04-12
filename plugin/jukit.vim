@@ -247,10 +247,10 @@ fun! s:set_mappings() abort
 
     " sending code
     if !hasmapto('jukit#send#line', 'n')
-        nnoremap <buffer> <cr> <cmd>call jukit#send#line()<cr>
+        nnoremap <buffer> <leader> <cmd>call jukit#send#line()<cr>
     endif
     if !hasmapto('jukit#send#selection', 'v')
-        vnoremap <buffer> <cr> <esc><cmd>call jukit#send#selection()<cr>
+        vnoremap <buffer> <leader> <esc><cmd>call jukit#send#selection()<cr>
     endif
     if !hasmapto('jukit#send#section', 'n')
         nnoremap <buffer> <leader>m <cmd>call jukit#send#section(0)<cr>
